@@ -106,6 +106,21 @@ img {
 
 .header-link.current {
     color: var(--act-link-txt);
+    }
+
+.current {
+    position: relative;
+}
+
+.current::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    left: 0px;
+    bottom: 0px;
+    background-color: #2196F3;
 }
 
 .header-link:hover,
