@@ -450,12 +450,12 @@ img {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 
-    transition: color var(--trnstn);
+    transition: border-color var(--trnstn);
     }
 
 .client-m-link:hover,
 .client-m-link:focus {
-border: 1px solid var(--act-link-txt);
+border-color: var(--act-link-txt);
 }
 
 .client-icon {
@@ -537,9 +537,7 @@ border: 1px solid var(--act-link-txt);
 .portfolio-m-item {
     width: 370px;
     margin-right: 30px;
-    margin-bottom: 30px;
-    
-    transition: box-shadow var(--trnstn);    
+    margin-bottom: 30px;        
     }
 
 .portfolio-m-item:nth-child(3n) {
@@ -550,16 +548,16 @@ border: 1px solid var(--act-link-txt);
     margin-bottom: 0;
 }
 
-.portfolio-m-item:hover,
-.portfolio-m-item:focus {
+portfolio-m-link {
+    transition: box-shadow var(--trnstn);
+}
+
+.portfolio-m-link:hover,
+.portfolio-m-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-/* .portfolio-m-link {
-    display: block;    
-} */
 
 .portfolio-m-overlay {
     position: relative;
@@ -584,8 +582,8 @@ border: 1px solid var(--act-link-txt);
     overflow: auto;
 }
 
-.portfolio-m-item:hover .portfolio-m-overtext,
-.portfolio-m-item:focus .portfolio-m-overtext {
+.portfolio-m-link:hover .portfolio-m-overtext,
+.portfolio-m-link:focus .portfolio-m-overtext {
     transform: translateY(0%);
 }
 
