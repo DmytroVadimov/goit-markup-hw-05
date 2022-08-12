@@ -548,9 +548,9 @@ border-color: var(--act-link-txt);
     margin-bottom: 0;
 }
 
-portfolio-m-link {
+.portfolio-m-link {
     transition: box-shadow var(--trnstn);
-}
+    }
 
 .portfolio-m-link:hover,
 .portfolio-m-link:focus {
