@@ -549,6 +549,8 @@ border-color: var(--act-link-txt);
 }
 
 .portfolio-m-link {
+    display: block;
+
     transition: box-shadow var(--trnstn);
     }
 
